@@ -13,9 +13,13 @@
 		9998DD1E1DEFAD45003252A9 /* MusicSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9998DD1C1DEFAD45003252A9 /* MusicSync.xcdatamodeld */; };
 		9998DD201DEFAD45003252A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9998DD1F1DEFAD45003252A9 /* Assets.xcassets */; };
 		9998DD231DEFAD45003252A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9998DD211DEFAD45003252A9 /* LaunchScreen.storyboard */; };
+		9998DD2B1DEFC855003252A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9998DD2A1DEFC855003252A9 /* GoogleService-Info.plist */; };
+		AE55D7D969399F239F81EEFF /* Pods_MusicSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF520D8BF4E32BDF8C45503 /* Pods_MusicSync.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1668A6C9FAF3E8FEAEC0955B /* Pods-MusicSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-MusicSync/Pods-MusicSync.release.xcconfig"; sourceTree = "<group>"; };
+		4BF520D8BF4E32BDF8C45503 /* Pods_MusicSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9998DD121DEFAD45003252A9 /* MusicSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9998DD151DEFAD45003252A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9998DD171DEFAD45003252A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		9998DD1F1DEFAD45003252A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9998DD221DEFAD45003252A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9998DD241DEFAD45003252A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9998DD2A1DEFC855003252A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF8E59EDB8260FCE446A8D72 /* Pods-MusicSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MusicSync/Pods-MusicSync.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE55D7D969399F239F81EEFF /* Pods_MusicSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8A9768B6E1BE5AB0C34D65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF8E59EDB8260FCE446A8D72 /* Pods-MusicSync.debug.xcconfig */,
+				1668A6C9FAF3E8FEAEC0955B /* Pods-MusicSync.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C964558A633578B1D6D72A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BF520D8BF4E32BDF8C45503 /* Pods_MusicSync.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9998DD091DEFAD45003252A9 = {
 			isa = PBXGroup;
 			children = (
 				9998DD141DEFAD45003252A9 /* MusicSync */,
 				9998DD131DEFAD45003252A9 /* Products */,
+				3B8A9768B6E1BE5AB0C34D65 /* Pods */,
+				7C964558A633578B1D6D72A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				9998DD211DEFAD45003252A9 /* LaunchScreen.storyboard */,
 				9998DD241DEFAD45003252A9 /* Info.plist */,
 				9998DD1C1DEFAD45003252A9 /* MusicSync.xcdatamodeld */,
+				9998DD2A1DEFC855003252A9 /* GoogleService-Info.plist */,
 			);
 			path = MusicSync;
 			sourceTree = "<group>";
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9998DD271DEFAD45003252A9 /* Build configuration list for PBXNativeTarget "MusicSync" */;
 			buildPhases = (
+				7A3469B90D6680597B3FDB04 /* [CP] Check Pods Manifest.lock */,
 				9998DD0E1DEFAD45003252A9 /* Sources */,
 				9998DD0F1DEFAD45003252A9 /* Frameworks */,
 				9998DD101DEFAD45003252A9 /* Resources */,
+				C253AD12D37877B8E22DEFB3 /* [CP] Embed Pods Frameworks */,
+				1FFA69E98B3785A5C8006278 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,7 +129,7 @@
 				TargetAttributes = {
 					9998DD111DEFAD45003252A9 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 47FWPX3KEU;
+						DevelopmentTeam = 3MS4CJ7FH7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,10 +160,59 @@
 				9998DD231DEFAD45003252A9 /* LaunchScreen.storyboard in Resources */,
 				9998DD201DEFAD45003252A9 /* Assets.xcassets in Resources */,
 				9998DD1B1DEFAD45003252A9 /* Main.storyboard in Resources */,
+				9998DD2B1DEFC855003252A9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFA69E98B3785A5C8006278 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicSync/Pods-MusicSync-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A3469B90D6680597B3FDB04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C253AD12D37877B8E22DEFB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MusicSync/Pods-MusicSync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9998DD0E1DEFAD45003252A9 /* Sources */ = {
@@ -261,10 +340,12 @@
 		};
 		9998DD281DEFAD45003252A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF8E59EDB8260FCE446A8D72 /* Pods-MusicSync.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 47FWPX3KEU;
+				DEVELOPMENT_TEAM = 3MS4CJ7FH7;
 				INFOPLIST_FILE = MusicSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.MusicSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,10 +355,12 @@
 		};
 		9998DD291DEFAD45003252A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1668A6C9FAF3E8FEAEC0955B /* Pods-MusicSync.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 47FWPX3KEU;
+				DEVELOPMENT_TEAM = 3MS4CJ7FH7;
 				INFOPLIST_FILE = MusicSync/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZiadCorp.MusicSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +387,7 @@
 				9998DD291DEFAD45003252A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
